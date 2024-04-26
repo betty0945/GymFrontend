@@ -1,0 +1,18 @@
+.primary{
+    color:rgb(15, 15, 18);
+}
+.font-xl{
+    font-size: 72px;
+}
+.button {
+    margin: 0 10px;
+}
+/* In MyStyle.css */
+.background {
+    background-color: rgb(76, 178, 212);
+    height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+}
