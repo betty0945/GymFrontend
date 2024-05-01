@@ -31,8 +31,8 @@ render(){
     <div className="App" >
       
           
-     
-      <UserLanding />
+     // Just change this to view anyof the files
+      <FrontPage />
       
 </div>
 
