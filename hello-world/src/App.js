@@ -20,8 +20,19 @@ import FrontPage from './components/FrontPage'
 import childComponent from './components/ChildComponent'
 import TrainerLanding from './components/TrainerLanding'
 import UserLanding from'./components/UserLanding'
+import Login from './components/Login';
+import TrainerCreateWorkout from './components/TrainerCreateWorkout';
 
+// function App() {
+//   return (
+//     <div>
+//       {/* <Login />; */}
+//       <TrainerCreateWorkout />
+//     </div>
+//   );
+// }
 
+// export default App;
 
 class App extends Component{
   //function App(){
@@ -30,9 +41,16 @@ render(){
   return (
     <div className="App" >
       
+<<<<<<< HEAD
           
      // Just change this to view anyof the files
       <FrontPage />
+=======
+      {/* <Login /> */}
+      <TrainerCreateWorkout />
+     
+      {/* <UserLanding /> */}
+>>>>>>> 38873a6bf5dc37cc15a84cc3f6bdbc176eba6ff9
       
 </div>
 
