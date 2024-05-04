@@ -11,11 +11,10 @@ class UserLanding extends Component {
         return (
 
             <div className="background">
-                <h1 className={`${ClassName} font-xl`}> Welcome  Trainers! </h1>
+                <h1 className={`${ClassName} font-xl`}> Welcome  Users! </h1>
                 <h4> Look for Trainer 🔍</h4>
                 <h4> Search a workout 💪🏼</h4>
                 <h4> Edit your info ℹ️</h4>
-               
                 <h4> Send message to Trainer 💬</h4>
                
                
