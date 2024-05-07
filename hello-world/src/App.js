@@ -31,10 +31,10 @@ function App() {
       {/* <Welcome />  */}
       {/* <FrontPage /> */}
       {/* <Login />; */}
-      {/* <Signup /> */}
+      <Signup />
       {/* <UserLanding /> */}
       {/* <TrainerLanding /> */}
-      <TrainerCreateWorkout />
+      {/* <TrainerCreateWorkout /> */}
       {/* <Subscribe /> */}
      
     
