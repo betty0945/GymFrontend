@@ -1,26 +1,31 @@
 import React, { Component } from 'react'
 
- class Form extends Component {
+ class Signup extends Component {
 
     constructor(props){
         super(props)
 
         this.state ={
             Username : '',
-            comments :'',
-            topic:"react"
+            UserPassword:'',
+            email :'',
+            Sex:"Male"
         }
     }
-
      handleUsernameChange = (event) => {
         this.setState({
             username : event.target.value
         })
+      }
+       handlePasswordChange = (event) => {
+         this.setState({
+           userPassword: event.target.value
+         })
 
      }
      handleCommentsChange = event=>{
         this.setState({
-            comments:event.target.value
+            email:event.target.value
 
         })
 
@@ -32,17 +37,22 @@ import React, { Component } from 'react'
         })
      }
      handleSubmit = event => {
-         alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
+         alert(`${this.state.username} ${this.state.email} ${this.state.topic} ${this.state.password}`)
          event.preventDefault()
      }
      
 
   render() {
-    const { username, comments,topic }=this.state
+    const { username,password, email,topic }=this.state
     return (
+      <div> 
+         <h1>Sign up here </h1>
+        
+
         <form onSubmit={this.handleSubmit}>
+          
       <div>
-            <label>Username</label> 
+            <label>Full Name</label> 
             <input 
             type="text" 
             value={username} 
@@ -50,27 +60,38 @@ import React, { Component } from 'react'
              />
 
       </div>
+        <div>
+          <label>Password</label>
+          <input
+            type="text"
+            value={password}
+            onChange={this.handlePasswordChange}
+          />
+
+        </div>
+      
       <div>
-        <label>Comments</label>
+        <label>Email</label>
         <textarea 
         type="text"
-        value={comments}
+        value={email}
          onChange={this.handleCommentsChange}
         />
 
       </div>
       <div>
-        <label> Topic</label>
+        <label> Sex</label>
         <select value={topic} onChange={this.handleTopicChange}>
-            <option value="react">React</option>
-            <option value="Angular">Angular</option>
-            <option value="vue">Vue</option>
+            <option value="Male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-Binary">non-Binary</option>
         </select>
       </div>
       <button type="submit">Submit</button>
         </form>
+        </div>
     )
   }
 }
 
-export default Form
+export default Signup

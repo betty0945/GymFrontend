@@ -1,16 +1,16 @@
 //import React from "react";
 import React, { Component } from 'react'
 
-class Message extends Component {
+class Subscribe extends Component {
     constructor(){
         super()
         this.state={
-            message:'Welcome visitor'
+            message:'CLick here to Subscribe'
         }
     }
     changeMessage(){
         this.setState({
-            message:'Thank you for subscribing'
+            message:'Thank you for Subscribing'
         })
     }
     render() {
@@ -25,4 +25,4 @@ class Message extends Component {
     }
 
 }
-export default Message
+export default Subscribe
