@@ -6,13 +6,14 @@ import { RiLock2Fill } from "react-icons/ri";
 export const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [identification, setIdentification] = useState('');
     const [error, setError] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://your-backend-api.com/login', {
+            const response = await fetch('http://localhost:8080/loginuser', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
@@ -46,6 +47,10 @@ export const Login = () => {
                     <div className='input-box'>
                         <input type='password' onChange={(e) => setPassword(e.target.value)}  placeholder='Password' required />
                         <RiLock2Fill className='icon' />
+                    </div>
+
+                    <div className='input-box'>
+                        <input type='identification' onChange={(e) => setIdentification(e.target.value)}  placeholder='Identification' required />
                     </div>
     
                     <div className='remember-forget'>

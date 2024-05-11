@@ -22,6 +22,7 @@ import TrainerLanding from './components/TrainerLanding'
 import UserLanding from'./components/UserLanding'
 import Login from './components/Login';
 import TrainerCreateWorkout from './components/TrainerCreateWorkout';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // function App() {
 //   return (
@@ -40,13 +41,27 @@ class App extends Component{
 render(){
   return (
     <div className="App" >
+
+      {/* <Router>
+        <Routes>
+          <Route path="/" element={<FrontPage primary={true} />} />
+          <Route key="login-user" exact path="/loginuser" element={<Login />} />
+          <Route key="login-trainer" exact path="/logintrainer" element={<Login />} />
+          <Route path="/userpage" element={<UserLanding />} />
+        </Routes>
+      </Router> */}
+
       
       {/* <Login /> */}
       <TrainerCreateWorkout />
      
       {/* <UserLanding /> */}
+      {/* <TrainerLanding /> */}
+      {/* <FrontPage primary={true} /> */}
+
+      {/* <Form /> */}
       
-</div>
+  </div>
 
         /* 
          <FrontPage primary={true} />

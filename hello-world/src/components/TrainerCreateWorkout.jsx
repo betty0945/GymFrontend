@@ -102,18 +102,22 @@ function WorkoutForm({ onSubmit}) {
 };
 
 function TrainerCreateWorkout() {
-  const handleSubmit = (workout) => {
-    fetch('/api/workouts', {
+  const handleSubmit = async (workout) => {
+    // console.log("yuhhhhhhhhhhhh");
+
+    console.log(workout);
+    const response = await fetch('http://localhost:8080/createworkout', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(workout)
-    }).then(response => {
-      return response.text();
+    });/*.then(response => {
+      console.log(response);
     }).catch(error => {
       console.log(error);
-    });
+    });*/
+    console.log(response);
   };
 
   return (
